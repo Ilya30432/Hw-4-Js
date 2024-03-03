@@ -21,15 +21,20 @@ const num1 = +prompt("Введите число");
     };  
 // Задача 4 //
 const numPrime = +prompt("Введите число") ;
-function isPrime(numPrime) {
+// function isPrime(numPrime) {
     for(let b = 2 ; b < numPrime ; b++){
         if(numPrime % b === 0){
-            return false;
+            console.log("false");
+            break;
+        } else{
+            console.log("true");
+            break;
         };
     };
-    return true;
-};
-console.log(isPrime(numPrime));
+    //return true;
+//};
+//console.log(isPrime(numPrime));
+
 // Задача 5 //
 const num3 = +prompt("Введите число") ;
 for(let c = 1 ; c <= 10; c++ ){
